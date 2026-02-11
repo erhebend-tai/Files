@@ -990,7 +990,7 @@
     <value>Nhân đôi thẻ</value>
   </data>
   <data name="HorizontalMultitaskingControlMoveTabToNewWindow.Text" xml:space="preserve">
-    <value>Di chuyển thẻ đến cửa sổ mới</value>
+    <value>Di chuyển thẻ sang cửa sổ mới</value>
   </data>
   <data name="NewTab" xml:space="preserve">
     <value>Thẻ mới</value>
@@ -1413,7 +1413,7 @@
     <value>{0} mục</value>
   </data>
   <data name="ReopenClosedTab" xml:space="preserve">
-    <value>Mở lại thẻ</value>
+    <value>Mở lại thẻ đã đóng</value>
   </data>
   <data name="Rename" xml:space="preserve">
     <value>Đổi tên</value>
@@ -1773,7 +1773,7 @@
     <value>Nhãn</value>
   </data>
   <data name="SettingsOpenItemsWithOneClick" xml:space="preserve">
-    <value>Mở khoản mục bằng một lần nhấp</value>
+    <value>Mở tệp bằng một lần nhấp</value>
   </data>
   <data name="FolderPath" xml:space="preserve">
     <value>Đường dẫn thư mục</value>
@@ -2072,8 +2072,8 @@
   <data name="Lockscreen" xml:space="preserve">
     <value>Màn hình khóa</value>
   </data>
-  <data name="OpenFolderWithOneClickColumnsLayout" xml:space="preserve">
-    <value>Mở thư mục bằng một lần nhấp trong bố cục cột</value>
+  <data name="OpenFolderWithOneClick" xml:space="preserve">
+    <value>Mở thư mục bằng một lần nhấp</value>
   </data>
   <data name="OpeningItems" xml:space="preserve">
     <value>Mở các khoản mục</value>
@@ -3131,6 +3131,15 @@
   </data>
   <data name="UncommittedChanges" xml:space="preserve">
     <value>Bạn có các thay đổi chưa commit ở nhánh này. Bạn muốn làm gì với các thay đổi này?</value>
+  </data>
+  <data name="MergeInProgress" xml:space="preserve">
+    <value>Bạn hiện có merge với conflict chưa giải quyết. Vui lòng thực hiện giải quyết conflict hoặc bỏ merge để chuyển nhánh.</value>
+  </data>
+  <data name="AbortMergeAndSwitch" xml:space="preserve">
+    <value>Bỏ merge và chuyển sang '{0}'</value>
+  </data>
+  <data name="StayAndResolveConflicts" xml:space="preserve">
+    <value>Ở lại '{0}' và giải quyết conflict</value>
   </data>
   <data name="SwitchBranch" xml:space="preserve">
     <value>Chuyển nhánh</value>
@@ -4331,5 +4340,20 @@
   </data>
   <data name="FailedToOpenLogFile" xml:space="preserve">
     <value>Không thể mở tệp nhật ký</value>
+  </data>
+  <data name="ShowStatusBar" xml:space="preserve">
+    <value>Hiện thanh trạng thái</value>
+  </data>
+  <data name="OnlyInColumnsView" xml:space="preserve">
+    <value>Chỉ trong bố cục cột</value>
+  </data>
+  <data name="CreateNewFile" xml:space="preserve">
+    <value>New {0}</value>
+  </data>
+  <data name="EnableSmoothScrolling" xml:space="preserve">
+    <value>Bật làm mịn chuyển động cuộn trang</value>
+  </data>
+  <data name="Scrolling" xml:space="preserve">
+    <value>Cuộn trang</value>
   </data>
 </root>

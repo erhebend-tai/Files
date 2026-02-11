@@ -849,7 +849,7 @@
     <value>Ruta de miniatura corta</value>
   </data>
   <data name="PropertyThumbnailSmallUri" xml:space="preserve">
-    <value>URI de miniatura corta</value>
+    <value>Uri corta de miniatura</value>
   </data>
   <data name="PropertyUserWebUrl" xml:space="preserve">
     <value>Url de la web del usuario</value>
@@ -1773,7 +1773,7 @@
     <value>Etiqueta</value>
   </data>
   <data name="SettingsOpenItemsWithOneClick" xml:space="preserve">
-    <value>Abrir elementos con un solo clic</value>
+    <value>Abrir archivos con un solo clic</value>
   </data>
   <data name="FolderPath" xml:space="preserve">
     <value>Ruta de la carpeta</value>
@@ -2072,8 +2072,8 @@
   <data name="Lockscreen" xml:space="preserve">
     <value>Pantalla de bloqueo</value>
   </data>
-  <data name="OpenFolderWithOneClickColumnsLayout" xml:space="preserve">
-    <value>Abrir carpetas con un solo clic en el diseño de columnas</value>
+  <data name="OpenFolderWithOneClick" xml:space="preserve">
+    <value>Abrir carpetas con un solo clic</value>
   </data>
   <data name="OpeningItems" xml:space="preserve">
     <value>Abrir elementos</value>
@@ -3131,6 +3131,15 @@
   </data>
   <data name="UncommittedChanges" xml:space="preserve">
     <value>Tiene cambios sin confirmar en esta rama. ¿Qué desea hacer con ellos?</value>
+  </data>
+  <data name="MergeInProgress" xml:space="preserve">
+    <value>Tiene una fusión en curso con conflictos sin resolver. Resuelva los conflictos o aborte la fusión para cambiar de rama.</value>
+  </data>
+  <data name="AbortMergeAndSwitch" xml:space="preserve">
+    <value>Cancelar la fusión y cambiar a '{0}'</value>
+  </data>
+  <data name="StayAndResolveConflicts" xml:space="preserve">
+    <value>Permanecer en '{0}' y resolver los conflictos</value>
   </data>
   <data name="SwitchBranch" xml:space="preserve">
     <value>Cambiar rama</value>
@@ -4331,5 +4340,20 @@
   </data>
   <data name="FailedToOpenLogFile" xml:space="preserve">
     <value>No se puede abrir el archivo de registro</value>
+  </data>
+  <data name="ShowStatusBar" xml:space="preserve">
+    <value>Mostrar barra de estado</value>
+  </data>
+  <data name="OnlyInColumnsView" xml:space="preserve">
+    <value>Sólo en la vista de columnas</value>
+  </data>
+  <data name="CreateNewFile" xml:space="preserve">
+    <value>Nuevo {0}</value>
+  </data>
+  <data name="EnableSmoothScrolling" xml:space="preserve">
+    <value>Enable smooth scrolling</value>
+  </data>
+  <data name="Scrolling" xml:space="preserve">
+    <value>Scrolling</value>
   </data>
 </root>

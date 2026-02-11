@@ -1773,7 +1773,7 @@
     <value>Метка</value>
   </data>
   <data name="SettingsOpenItemsWithOneClick" xml:space="preserve">
-    <value>Открывать файлы и папки одним нажатием</value>
+    <value>Открывать файлы одним щелчком</value>
   </data>
   <data name="FolderPath" xml:space="preserve">
     <value>Путь к папке</value>
@@ -2072,8 +2072,8 @@
   <data name="Lockscreen" xml:space="preserve">
     <value>Экран блокировки</value>
   </data>
-  <data name="OpenFolderWithOneClickColumnsLayout" xml:space="preserve">
-    <value>Открывать папки одним кликом в макете Столбцы</value>
+  <data name="OpenFolderWithOneClick" xml:space="preserve">
+    <value>Открывать папки одним кликом</value>
   </data>
   <data name="OpeningItems" xml:space="preserve">
     <value>Открытие объектов</value>
@@ -3131,6 +3131,15 @@
   </data>
   <data name="UncommittedChanges" xml:space="preserve">
     <value>У вас есть незакоммиченные изменения в этой ветке. Что вы хотите с ними сделать?</value>
+  </data>
+  <data name="MergeInProgress" xml:space="preserve">
+    <value>У вас есть текущее слияние с неразрешенными конфликтами. Пожалуйста, устраните конфликты или прервите слияние для переключения ветвей.</value>
+  </data>
+  <data name="AbortMergeAndSwitch" xml:space="preserve">
+    <value>Прервать слияние и переключиться на '{0}'</value>
+  </data>
+  <data name="StayAndResolveConflicts" xml:space="preserve">
+    <value>Оставайтесь на '{0}' и разрешите конфликты</value>
   </data>
   <data name="SwitchBranch" xml:space="preserve">
     <value>Сменить ветку</value>
@@ -4331,5 +4340,20 @@
   </data>
   <data name="FailedToOpenLogFile" xml:space="preserve">
     <value>Не удалось открыть файл журнала</value>
+  </data>
+  <data name="ShowStatusBar" xml:space="preserve">
+    <value>Показать строку состояния</value>
+  </data>
+  <data name="OnlyInColumnsView" xml:space="preserve">
+    <value>Только в виде столбцов</value>
+  </data>
+  <data name="CreateNewFile" xml:space="preserve">
+    <value>New {0}</value>
+  </data>
+  <data name="EnableSmoothScrolling" xml:space="preserve">
+    <value>Enable smooth scrolling</value>
+  </data>
+  <data name="Scrolling" xml:space="preserve">
+    <value>Scrolling</value>
   </data>
 </root>

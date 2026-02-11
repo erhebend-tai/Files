@@ -1773,7 +1773,7 @@
     <value>Tag</value>
   </data>
   <data name="SettingsOpenItemsWithOneClick" xml:space="preserve">
-    <value>Elemente mit einem Klick öffnen</value>
+    <value>Dateien mit einem einzigen Klick öffnen</value>
   </data>
   <data name="FolderPath" xml:space="preserve">
     <value>Ordnerpfad</value>
@@ -2072,8 +2072,8 @@
   <data name="Lockscreen" xml:space="preserve">
     <value>Sperrbildschirm</value>
   </data>
-  <data name="OpenFolderWithOneClickColumnsLayout" xml:space="preserve">
-    <value>Ordner mit einem Klick im Spaltenlayout öffnen</value>
+  <data name="OpenFolderWithOneClick" xml:space="preserve">
+    <value>Ordner mit einem einzigen Klick öffnen</value>
   </data>
   <data name="OpeningItems" xml:space="preserve">
     <value>Öffne Elemente</value>
@@ -3131,6 +3131,15 @@
   </data>
   <data name="UncommittedChanges" xml:space="preserve">
     <value>Du hast nicht committete Änderungen in diesem Branch. Was möchtest du mit ihnen tun?</value>
+  </data>
+  <data name="MergeInProgress" xml:space="preserve">
+    <value>Du hast eine laufende Zusammenführung mit ungelösten Konflikten. Bitte löse die Konflikte oder breche die Zusammenführung ab, um zwischen Branches zu wechseln.</value>
+  </data>
+  <data name="AbortMergeAndSwitch" xml:space="preserve">
+    <value>Zusammenführung abbrechen und zu '{0} ' wechseln</value>
+  </data>
+  <data name="StayAndResolveConflicts" xml:space="preserve">
+    <value>Auf '{0}' bleiben und Konflikte lösen</value>
   </data>
   <data name="SwitchBranch" xml:space="preserve">
     <value>Branch wechseln</value>
@@ -4331,5 +4340,20 @@
   </data>
   <data name="FailedToOpenLogFile" xml:space="preserve">
     <value>Log-Datei konnte nicht geöffnet werden</value>
+  </data>
+  <data name="ShowStatusBar" xml:space="preserve">
+    <value>Statusleiste anzeigen</value>
+  </data>
+  <data name="OnlyInColumnsView" xml:space="preserve">
+    <value>Nur in der Spaltenansicht</value>
+  </data>
+  <data name="CreateNewFile" xml:space="preserve">
+    <value>Neu {0}</value>
+  </data>
+  <data name="EnableSmoothScrolling" xml:space="preserve">
+    <value>Sanftes Scrollen aktivieren</value>
+  </data>
+  <data name="Scrolling" xml:space="preserve">
+    <value>Scrollen</value>
   </data>
 </root>

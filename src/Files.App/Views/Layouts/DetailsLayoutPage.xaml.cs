@@ -360,7 +360,7 @@ namespace Files.App.Views.Layouts
 
 		}
 
-		private void FileList_SelectionChanged(object sender, SelectionChangedEventArgs e)
+		protected override void FileList_SelectionChanged(object sender, SelectionChangedEventArgs e)
 		{
 			SelectedItems = FileList.SelectedItems.Cast<ListedItem>().Where(x => x is not null).ToList();
 
@@ -392,7 +392,7 @@ namespace Files.App.Views.Layouts
 		{
 			if (IsRenamingItem)
 			{
-				ValidateItemNameInputTextAsync(textBox, args, (showError) =>
+				_ = ValidateItemNameInputTextAsync(textBox, args, (showError) =>
 				{
 					FileNameTeachingTip.Visibility = showError ? Visibility.Visible : Visibility.Collapsed;
 					FileNameTeachingTip.IsOpen = showError;
@@ -593,7 +593,8 @@ namespace Files.App.Views.Layouts
 			}
 
 			// Check if the setting to open items with a single click is turned on
-			if (UserSettingsService.FoldersSettingsService.OpenItemsWithOneClick)
+			if ((item.PrimaryItemAttribute is StorageItemTypes.File && UserSettingsService.FoldersSettingsService.OpenItemsWithOneClick) ||
+				(item.PrimaryItemAttribute is StorageItemTypes.Folder && UserSettingsService.FoldersSettingsService.OpenFoldersWithOneClick is OpenFoldersWithOneClickEnum.Always))
 			{
 				ResetRenameDoubleClick();
 				await Commands.OpenItem.ExecuteAsync();
@@ -642,7 +643,9 @@ namespace Files.App.Views.Layouts
 			if (item == null && sender is ListView listView && listView.SelectedItem is ListedItem selectedItem)
 				item = selectedItem;
 
-			if (item != null && !UserSettingsService.FoldersSettingsService.OpenItemsWithOneClick)
+			if (item != null && item.PrimaryItemAttribute == StorageItemTypes.File && !UserSettingsService.FoldersSettingsService.OpenItemsWithOneClick)
+				await OpenItem(item);
+			else if (item != null && item.PrimaryItemAttribute == StorageItemTypes.Folder && UserSettingsService.FoldersSettingsService.OpenFoldersWithOneClick is not OpenFoldersWithOneClickEnum.Always)
 				await OpenItem(item);
 			else if (item == null && UserSettingsService.FoldersSettingsService.DoubleClickToGoUp)
 				await Commands.NavigateUp.ExecuteAsync();
@@ -980,7 +983,7 @@ namespace Files.App.Views.Layouts
 			if (tagName is null)
 				return;
 
-			ParentShellPageInstance?.SubmitSearch($"tag:{tagName}");
+			ParentShellPageInstance?.SubmitSearch(FolderSearch.FormatTagQuery(tagName));
 		}
 
 		private void FileTag_PointerEntered(object sender, PointerRoutedEventArgs e)

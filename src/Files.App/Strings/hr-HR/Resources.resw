@@ -1773,7 +1773,7 @@
     <value>Oznaka datoteke</value>
   </data>
   <data name="SettingsOpenItemsWithOneClick" xml:space="preserve">
-    <value>Otvaranje stavki jednim klikom</value>
+    <value>Otvaranje datoteka jednim klikom</value>
   </data>
   <data name="FolderPath" xml:space="preserve">
     <value>Putanja do mape</value>
@@ -1980,7 +1980,7 @@
     <value>Slike</value>
   </data>
   <data name="UpdateFiles" xml:space="preserve">
-    <value>Ažuriraj datoteke</value>
+    <value>Ažuriraj Files</value>
   </data>
   <data name="FileTags" xml:space="preserve">
     <value>Oznake</value>
@@ -2072,8 +2072,8 @@
   <data name="Lockscreen" xml:space="preserve">
     <value>Zaključani zaslon</value>
   </data>
-  <data name="OpenFolderWithOneClickColumnsLayout" xml:space="preserve">
-    <value>Otvaranje mapa jednim klikom u prikazu stupaca</value>
+  <data name="OpenFolderWithOneClick" xml:space="preserve">
+    <value>Otvaranje mapa jednim klikom</value>
   </data>
   <data name="OpeningItems" xml:space="preserve">
     <value>Otvaranje stavki</value>
@@ -2745,7 +2745,7 @@
     <value>Dupliciraj odabranu karticu</value>
   </data>
   <data name="CloseTabsToTheLeftCurrentDescription" xml:space="preserve">
-    <value>Close tabs to the left of current tab</value>
+    <value>Zatvori kartice lijevo od trenutne kartice</value>
   </data>
   <data name="CloseTabsToTheLeftSelectedDescription" xml:space="preserve">
     <value>Close tabs to the left of selected tab</value>
@@ -3131,6 +3131,15 @@
   </data>
   <data name="UncommittedChanges" xml:space="preserve">
     <value>You have uncommitted changes on this branch. What would you like to do with them?</value>
+  </data>
+  <data name="MergeInProgress" xml:space="preserve">
+    <value>You have an ongoing merge with unresolved conflicts. Please resolve the conflicts or abort the merge to switch branches.</value>
+  </data>
+  <data name="AbortMergeAndSwitch" xml:space="preserve">
+    <value>Abort merge and switch to '{0}'</value>
+  </data>
+  <data name="StayAndResolveConflicts" xml:space="preserve">
+    <value>Stay on '{0}' and resolve conflicts</value>
   </data>
   <data name="SwitchBranch" xml:space="preserve">
     <value>Switch branch</value>
@@ -3837,10 +3846,10 @@
     <value>Edit permissions</value>
   </data>
   <data name="BackgroundRunningNotificationBody" xml:space="preserve">
-    <value>Files is still running in the background to improve startup performance.</value>
+    <value>Files i dalje radi u pozadini kako bi poboljšao brzinu pokretanja.</value>
   </data>
   <data name="BackgroundRunningNotificationHeader" xml:space="preserve">
-    <value>Where did Files go?</value>
+    <value>Gdje je Files nestao?</value>
   </data>
   <data name="QuestionsAndDiscussions" xml:space="preserve">
     <value>Pitanja i rasprave</value>
@@ -4331,5 +4340,20 @@
   </data>
   <data name="FailedToOpenLogFile" xml:space="preserve">
     <value>Nije moguće otvoriti datoteku zapisnika</value>
+  </data>
+  <data name="ShowStatusBar" xml:space="preserve">
+    <value>Prikaži statusnu traku</value>
+  </data>
+  <data name="OnlyInColumnsView" xml:space="preserve">
+    <value>Samo u prikazu stupaca</value>
+  </data>
+  <data name="CreateNewFile" xml:space="preserve">
+    <value>New {0}</value>
+  </data>
+  <data name="EnableSmoothScrolling" xml:space="preserve">
+    <value>Enable smooth scrolling</value>
+  </data>
+  <data name="Scrolling" xml:space="preserve">
+    <value>Scrolling</value>
   </data>
 </root>

@@ -1773,7 +1773,7 @@
     <value>Etiqueta</value>
   </data>
   <data name="SettingsOpenItemsWithOneClick" xml:space="preserve">
-    <value>Abrir itens com um clique</value>
+    <value>Abrir ficheiros com um clique</value>
   </data>
   <data name="FolderPath" xml:space="preserve">
     <value>Caminho da pasta</value>
@@ -2072,8 +2072,8 @@
   <data name="Lockscreen" xml:space="preserve">
     <value>Ecrã de bloqueio</value>
   </data>
-  <data name="OpenFolderWithOneClickColumnsLayout" xml:space="preserve">
-    <value>Abrir pastas com um clique no esquema Colunas</value>
+  <data name="OpenFolderWithOneClick" xml:space="preserve">
+    <value>Abrir pastas com um clique</value>
   </data>
   <data name="OpeningItems" xml:space="preserve">
     <value>Abrir itens</value>
@@ -3131,6 +3131,15 @@
   </data>
   <data name="UncommittedChanges" xml:space="preserve">
     <value>Existem alterações por submeter neste 'branch'. O que pretende fazer?</value>
+  </data>
+  <data name="MergeInProgress" xml:space="preserve">
+    <value>Existe um combinação em curso com conflitos por resolver. Resolva os conflitos ou cancele a operação para trocar de 'branch'.</value>
+  </data>
+  <data name="AbortMergeAndSwitch" xml:space="preserve">
+    <value>Cancelar combinação e trocar para '{0}'</value>
+  </data>
+  <data name="StayAndResolveConflicts" xml:space="preserve">
+    <value>Ficar em '{0}' e resolver conflitos</value>
   </data>
   <data name="SwitchBranch" xml:space="preserve">
     <value>Trocar 'branch'</value>
@@ -4331,5 +4340,20 @@
   </data>
   <data name="FailedToOpenLogFile" xml:space="preserve">
     <value>Não foi possível abrir o ficheiro de registos</value>
+  </data>
+  <data name="ShowStatusBar" xml:space="preserve">
+    <value>Mostrar barra de estado</value>
+  </data>
+  <data name="OnlyInColumnsView" xml:space="preserve">
+    <value>Apenas na visualização em Colunas</value>
+  </data>
+  <data name="CreateNewFile" xml:space="preserve">
+    <value>Novo {0}</value>
+  </data>
+  <data name="EnableSmoothScrolling" xml:space="preserve">
+    <value>Ativar deslocação suve</value>
+  </data>
+  <data name="Scrolling" xml:space="preserve">
+    <value>Deslocação</value>
   </data>
 </root>
