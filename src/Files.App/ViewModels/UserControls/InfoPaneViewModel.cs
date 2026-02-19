@@ -101,6 +101,13 @@ namespace Files.App.ViewModels.UserControls
 			}
 		}
 
+		private string? _DirectoryItemCount;
+		public string? DirectoryItemCount
+		{
+			get => _DirectoryItemCount;
+			set => SetProperty(ref _DirectoryItemCount, value);
+		}
+
 		/// <summary>
 		/// Value indicating if the download cloud files option should be displayed
 		/// </summary>
@@ -284,7 +291,7 @@ namespace Files.App.ViewModels.UserControls
 				return new MediaPreview(model);
 			}
 
-			if (MarkdownPreviewViewModel.ContainsExtension(ext))
+			if (FileExtensionHelpers.IsMarkdownFile(ext))
 			{
 				var model = new MarkdownPreviewViewModel(item);
 				await model.LoadAsync();
@@ -300,7 +307,7 @@ namespace Files.App.ViewModels.UserControls
 				return new ImagePreview(model);
 			}
 
-			if (TextPreviewViewModel.ContainsExtension(ext))
+			if (FileExtensionHelpers.IsTextFile(ext))
 			{
 				var model = new TextPreviewViewModel(item);
 				await model.LoadAsync();
@@ -324,7 +331,7 @@ namespace Files.App.ViewModels.UserControls
 				return new HtmlPreview(model);
 			}*/
 
-			if (RichTextPreviewViewModel.ContainsExtension(ext))
+			if (FileExtensionHelpers.IsRichTextFile(ext))
 			{
 				var model = new RichTextPreviewViewModel(item);
 				await model.LoadAsync();
